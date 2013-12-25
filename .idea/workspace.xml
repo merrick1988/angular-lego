@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2936c6d8-03eb-4345-99ea-5a20522d73a9" name="Default" comment="" />
+    <list default="true" id="2936c6d8-03eb-4345-99ea-5a20522d73a9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <ignored path="angular-lego.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="7" selection-start="226" selection-end="226" vertical-scroll-proportion="0.49186257" vertical-offset="0" max-vertical-offset="553">
+            <state line="12" column="29" selection-start="194" selection-end="194" vertical-scroll-proportion="0.36889693" vertical-offset="0" max-vertical-offset="553">
               <folding />
             </state>
           </provider>
@@ -248,7 +250,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="226" selection-end="226" vertical-scroll-proportion="0.49186257" vertical-offset="0" max-vertical-offset="553">
+        <state line="12" column="29" selection-start="194" selection-end="194" vertical-scroll-proportion="0.36889693" vertical-offset="0" max-vertical-offset="553">
           <folding />
         </state>
       </provider>
