@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="mainModule">
+<head>
+	<meta charset="utf-8">
+	<title>Angular Modal Window</title>
+	<link rel="stylesheet" href="../../lib/styles/bootstrap/bootstrap.css"/>
+	<link rel="stylesheet" href="styles/modal.css"/>
+</head>
+<body ng-controller="mainController">
+
+	<!-- Button to trigger modal -->
+
+	<button ts-modal="#warning-alert">Show Modal</button>
+
+	<div id="warning-alert">
+		<div class="alert-modal">
+			<div class="modal__body">
+				Blaaaa
+			</div>
+			<div class="modal__footer">
+				<button ng-click="cancel()">Cancel</button>
+				<button ng-click="ok()">Cancel</button>
+			</div>
+		</div>
+	</div>
+
+<!--  Scripts  -->
+	<!--  Vendor -->
+	<script src="../../lib/scripts/angular/angular.js"></script>
+	<script src="../../lib/scripts/angular/angular-ui-bootstrap.js"></script>
+	<script src="../../lib/scripts/angular/angular-ui-bootstrap-tpls.js"></script>
+	<script src="../../lib/scripts/jQuery/jQuery.js"></script>
+	<script src="../../lib/scripts/bootstrap/bootstrap.js"></script>
+
+	<!--  App  -->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    Modal Window
+\*------------------------------------*/
+.modal {
+	background-color: #f2f2f2;
+	border: 1px solid #ddd;
+	top: 5%;
+	width: 400px;
+	left: 50%;
+	margin-left: -200px;
+}
+.modal__header {
+	padding: 10px 20px;
+	border-bottom: 1px solid #cccccc;
+}
+.modal__body {
+	padding: 10px 20px;
+}
+.modal__footer {
+	padding: 10px 20px;
+	text-align: center;
+}
+/*------------------------------------*\
+    Alert Modal Window
+\*------------------------------------*/
+.modal-alert{
+}
