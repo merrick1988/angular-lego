@@ -2,41 +2,37 @@
 	'use strict';
 
 	angular.module('mainModule')
-		.directive("tsModal", function($modal, $templateCache){
+		.directive("tsModal", function($modal, $templateCache, $compile){
 			return {
 				restrict: "A",
-				scope: {tsModal: "@"},
-				link: function(scope, element){
+				scope: true,
+				link: function (scope, element, attrs) {
 					var init,
-						ModalInstanceCtrl;
+					ModalInstanceCtrl;
 
-					init = function(){
-						$templateCache.put('modal.html', $(scope.tsModal).html());
-						$(scope.tsModal).remove();
+					init = function () {
+						$templateCache.put(attrs.tsModal + '.html', $(attrs.tsModal).html());
+						$(attrs.tsModal).remove();
 					};
 
-					ModalInstanceCtrl  = function ($scope, $modalInstance) {
-						$scope.ok = function (result) {
-							console.log(result)
-							$modalInstance.close(result);
-						};
-
-						$scope.cancel = function () {
-							$modalInstance.dismiss();
-						};
-
+					ModalInstanceCtrl = function ($scope, $modalInstance) {
 						$scope.close = function () {
 							$modalInstance.close();
 						};
 					};
 
-					element.bind("click", function(){
-						$modal.open({
-							template: $templateCache.get('modal.html'),
-							backdrop: 'static',
-							scope: scope,
-							controller: ModalInstanceCtrl
-						});
+					element.bind("click", function () {
+						var template = $templateCache.get(attrs.tsModal + '.html'),
+							linkFn = $compile(template);
+
+							linkFn(scope);
+
+							$modal.open({
+								template: template,
+								backdrop: 'static',
+								scope: scope,
+								controller: ModalInstanceCtrl
+							});
 					})
 
 					init();

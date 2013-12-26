@@ -4,22 +4,21 @@
 	<meta charset="utf-8">
 	<title>Angular Modal Window</title>
 	<link rel="stylesheet" href="../../lib/styles/bootstrap/bootstrap.css"/>
-	<link rel="stylesheet" href="styles/modal.css"/>
 </head>
-<body ng-controller="mainController">
+<body>
+	<div ng-controller="mainController">
+		<!-- Button to trigger modal -->
+		<button class="btn-primary" ts-modal="#warningAlert">Show Modal</button>
+	</div>
 
-	<!-- Button to trigger modal -->
-
-	<button ts-modal="#warning-alert">Show Modal</button>
-
-	<div id="warning-alert">
+	<div id="warningAlert">
 		<div class="alert-modal">
-			<div class="modal__body">
-				Blaaaa
+			<div class="modal-body">
+				{{message}}
 			</div>
-			<div class="modal__footer">
-				<button ng-click="cancel()">Cancel</button>
-				<button ng-click="ok()">Cancel</button>
+			<div class="modal-footer">
+				<button class="btn-danger" ng-click="cancel()">Cancel</button>
+				<button class="btn-success" ng-click="save()">Save</button>
 			</div>
 		</div>
 	</div>
