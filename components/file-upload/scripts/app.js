@@ -4,7 +4,9 @@
 	angular.module('mainModule', ['ui.bootstrap'])
 		.controller("mainController", ["$scope",
 			function($scope){
-
+				$scope.photo = {}
 			}
+
+
 		])
 })();
